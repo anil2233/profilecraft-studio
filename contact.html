@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Contact — ProfileCraft Studio</title>
+<meta name="description" content="ProfileCraft Studio — high-end compliant profiles for UK professionals. Premium presentation, platform-ready visuals, and polished copy that pass checks." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header class="header">
+  <div class="container">
+    
+<nav class="nav">
+  <a class="logo" href="index.html"><span class="mark" aria-hidden="true"></span><span class="logo-text"><span class="serif">ProfileCraft</span> <span class="sans">Studio</span></span></a>
+  <input id="menu-toggle" type="checkbox" aria-label="Open menu">
+  <label class="menu-button" for="menu-toggle" aria-label="Open menu"><span></span></label>
+  <ul class="menu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+  </div>
+</header>
+<main class="container">
+  
+<section class="hero">
+  <h1>Contact</h1>
+  <p class="lead">Let’s craft your profile.</p>
+</section>
+
+<section class="card">
+  <h2>Start Your Consultation</h2>
+  <div class="success" style="display:none;background:#ecfdf5;border:1px solid #34d399;color:#065f46;padding:12px;border-radius:12px;margin-bottom:12px">Thanks! Your message was sent. We’ll reply shortly.</div>
+  <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" style="display:grid;gap:12px;max-width:720px">
+    <input type="hidden" name="form-name" value="contact" />
+    <p style="display:none"><label>Don’t fill this out: <input name="bot-field" /></label></p>
+    <div class="field" style="display:flex;flex-direction:column;gap:6px">
+      <label>Full name</label>
+      <input class="input" type="text" name="name" required style="background:#fff;border:1px solid var(--line);border-radius:10px;padding:12px;color:var(--ink)"/>
+    </div>
+    <div class="field" style="display:flex;flex-direction:column;gap:6px">
+      <label>Email</label>
+      <input class="input" type="email" name="email" required style="background:#fff;border:1px solid var(--line);border-radius:10px;padding:12px;color:var(--ink)"/>
+    </div>
+    <div class="field" style="display:flex;flex-direction:column;gap:6px">
+      <label>What do you need?</label>
+      <textarea class="input" rows="5" name="message" placeholder="Tell us about your profile goals (SFW only)." required style="background:#fff;border:1px solid var(--line);border-radius:10px;padding:12px;color:var(--ink)"></textarea>
+    </div>
+    <div class="inline" style="display:flex;gap:10px;flex-wrap:wrap">
+      <button class="btn primary" type="submit">Send message</button>
+      <a class="btn" href="services.html">View services</a>
+    </div>
+    <p class="small muted">By submitting, you agree we may contact you solely regarding your enquiry. We minimise data and delete enquiries after they’re handled.</p>
+  </form>
+</section>
+
+<section class="card">
+  <h2>Direct Contact</h2>
+  <p>Email: <strong>contact@profilecraftstudio.online</strong></p>
+  <p class="small muted">For all creative and compliance projects, we recommend using the form for priority handling.</p>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footgrid">
+      <div class="foot-left">
+        <a class="logo" href="index.html"><span class="mark" aria-hidden="true"></span><span class="logo-text"><span class="serif">ProfileCraft</span> <span class="sans">Studio</span></span></a>
+        <p class="tagline small">A high-end digital brand agency for personal profiles.</p>
+      </div>
+      <div class="foot-right small">
+        <a href="privacy.html" aria-label="Privacy">Privacy</a>
+        <span>•</span>
+        <a href="terms.html" aria-label="Terms">Terms</a>
+        <span>•</span>
+        <a href="contact.html" aria-label="Contact">Contact</a>
+      </div>
+    </div>
+    <p class="small muted">© <span id="year"></span> ProfileCraft Studio. All rights reserved.</p>
+  </div>
+</footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear()</script>
+
+</body>
+</html>
